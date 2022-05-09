@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background: #f2f2f2;
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    max-width: 600px;
+    height: 500px;
+    padding: 50px;
+    color: #555;
+}
+
+.container .content{
+    display: none;
+    margin-top: 20px;
+}
+
+.container .content.contentEnglish{
+    display: block;
+}
+
+.check{
+    position: relative;
+    width: 50px;
+}
+
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #333;
+    border-radius: 25px;
+}
+.check:checked:before{
+    background: #00a1ff;
+}
+
+.check:after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+
+.check:checked:after{
+left: 25px;
+border: 2px solid #00a1ff;
+
+}
+
+.check:checked ~ .content.contentEnglish{
+    display: none;
+}
+.check:checked ~ .content.contentBangla{
+    display: block;
+}
+.en{
+    color: #333;
+
+}
+.bng{
+    color: #00a1ff;
+}
+
+
+
+/*  */
+.input-box{
+    
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+  }
+ .input-box input{
+    height: 100%;
+    width: 94%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+ .input-box input:focus,
+  .input-box input:valid{
+    border-color: #1a0101;
+  }
+.input-box i{
+    position: absolute;
+    color: #300303;
+    font-size: 17px;
+  }
+ .text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+ .text a{
+    text-decoration: none;
+  }
+ .text a:hover{
+    text-decoration: underline;
+  }
+ .button{
+    color: #fff;
+    margin-top: 40px;
+  }
+ .button input{
+    color: #fff;
+    background: #3f0404;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .button input:hover{
+    background: #360303;
+  }
+ label{
+    color: #2b0404;
+    cursor: pointer;
+  }
+ label:hover{
+    text-decoration: underline;
+  }
+  .btn1{
+margin-top: 88%;
+margin-right: 84%;
+color: white;
+
+}
+
+.btn{
+margin-top: 14%;
+margin-left: 80%;
+color: #300303;
+}
+.form{
+margin-left: 5%;
+margin-top: 10%;
+}
+
+/*  */
+body{
+    /* overflow: hidden; */
+    background-image: url(https://momlovesbest.com/wp-content/uploads/2021/02/Best-Anime-For-Kids-1.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+#album{
+    margin: 5% auto;
+    width: 700px;
+    height: 400px;
+}
+
+#album .turn-page{
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+
+
+}
+
+#album1{
+    margin: 5% auto;
+    width: 700px;
+    height: 400px;
+}
+
+#album1 .turn-page{
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+
+
+}
+#album div{
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center; 
+}
+
+#album1 div{
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center; 
+}
+
+
+#album1 .btn1{
+    margin-top: 80%;
+    margin-right: 80%;
+    
+}
+
+
+#album1 h1{
+    color: rgb(243, 235, 235);
+    font-size: 1.5rem;
+    margin-top: 10%;
+    margin-left: 5%;
+}
